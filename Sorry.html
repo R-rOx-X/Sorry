@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fce4ec;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        h1 {
+            color: #d81b60;
+        }
+        p {
+            color: #555;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .button {
+            background: #d81b60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background: #ad1457;
+        }
+        .no-button {
+            background: #555;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            position: absolute;
+        }
+        .gif-container {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function moveButton() {
+            const button = document.getElementById("no-button");
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 50);
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p>I know I messed up, and I hate seeing you upset. Please forgive me, you mean the world to me, I swear aisa kabhi nahi hoga wapis !!. 🥺</p>
+        <div class="heart">❤️</div>
+        <button class="button" onclick="alert('Thank you for forgiving me! ❤️ i will treat you with ice cream            😤/👉👈')">Forgive Me?</button>
+        <button class="no-button" id="no-button" onmouseover="moveButton()">No</button>
+        <p>i wont let you say no !!</p>
+        <div class="gif-container">
+            <div class="tenor-gif-embed" data-postid="19652589" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%">
+                <a href="https://tenor.com/view/cry-kh%C3%B3c-m%E1%BA%BFu-m%C3%A1o-doraemon-gif-19652589">Cry Khóc GIF</a> from 
+                <a href="https://tenor.com/search/cry-gifs">Cry GIFs</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
